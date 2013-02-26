@@ -15,7 +15,7 @@ var MessageModel = mongoose.model('Message', new mongoose.Schema({
 var server = restify.createServer();
 server.use(restify.bodyParser());
 
-server.get('/messages', getMessages);
+server.get('/messages2', getMessages);
 server.post('/messages', postMessage);
 server.del('/messages/:id', deleteMessage);
 
