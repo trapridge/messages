@@ -16,7 +16,6 @@ var server = restify.createServer();
 server.use(restify.bodyParser());
 
 server.get('/messages2', getMessages);
-
 server.post('/messages', postMessage);
 server.del('/messages/:id', deleteMessage);
 
