@@ -1,0 +1,15 @@
+{
+  "name": "guestbook",
+  "subdomain": "guestbook.trapridge",
+  "scripts": {
+    "start": "server.js"
+  },
+  "version": "0.0.1-1",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "mongoose": "3.5.x",
+    "restify": "2.2.x"
+  }
+}
