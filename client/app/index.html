@@ -6,23 +6,17 @@
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
-  <!--
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
 
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
--->
-
-  <div ng-controller="MyCtrl1" ng-init="listMessages()">
-
+  <div ng-controller="MyCtrl1" ng-init="listMessages()" ng-cloak>
     <input type="text" ng-model="newMessage">
     <button ng-click="addMessage()">Add</button>
-    <p ng-repeat="message in messages">{{message.message}} <a href ng-click="deleteMessage(message._id)">Delete</a></p>
-
+    <hr/>
+    <span ng-repeat="m in messages">
+      <input type="text" ng-model="m.message"></input>
+      <a href ng-click="saveMessage(m._id, m.message)">Save</a>
+      <a href ng-click="deleteMessage(m._id)">Delete</a>
+      <br/>
+    </span>
   </div>
 
   <!-- In production use:

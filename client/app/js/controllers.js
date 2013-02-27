@@ -5,9 +5,10 @@ function MyCtrl1($scope, $resource) {
 	var Message = $resource('/api/v1/messages/:id');
 	
 	$scope.listMessages = function() {
-		$scope.messages = [];
 		var messages = Message.query(function() {
-			angular.forEach(messages, function(value) {
+			$scope.messages = [];
+			angular.forEach(messages, function(value) {		
+				// console.log(value.message)	
 				this.push(value);
 			}, $scope.messages);
 		});
@@ -16,8 +17,9 @@ function MyCtrl1($scope, $resource) {
 	$scope.addMessage = function() {
 		var m = new Message();
 		m.message = $scope.newMessage;
-		m.$save();
-		$scope.listMessages();
+		m.$save(function() {
+			$scope.listMessages();
+		});
 	}
 
 	$scope.deleteMessage = function(_id) {
@@ -25,5 +27,16 @@ function MyCtrl1($scope, $resource) {
 			$scope.listMessages();
 		});
 	}
+
+
+	$scope.saveMessage = function(_id, message) {
+		var m = Message.get({id:_id}, function() {
+		  	m.message = message;
+		  	m.$save({id:_id}, function() {
+				$scope.listMessages();
+			});
+		});
+	}
+
 }
 MyCtrl1.$inject = ['$scope', '$resource'];

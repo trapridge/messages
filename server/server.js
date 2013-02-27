@@ -20,7 +20,9 @@ server.pre(function(req, res, next) {
 });
 
 // Set routes
+server.get('/api/v1/messages/:id', getMessages);
 server.get('/api/v1/messages', getMessages);
+server.post('/api/v1/messages/:id', postMessage);
 server.post('/api/v1/messages', postMessage);
 server.del('/api/v1/messages/:id', deleteMessage);
 server.get(/\/*/, restify.serveStatic({
@@ -34,18 +36,62 @@ server.listen(8080, function() {
 
 // request handlers
 function getMessages(req, res, next) {
-    MessageModel.find().sort('date asc').execFind(function (arr,data) {
-        res.send(data);
-    });
+    if(req.params.id) {
+        MessageModel.findById(req.params.id, function (err, message) {
+            if (err) {
+                console.log(err);
+                res.send(500);  
+            } 
+            res.send(message);
+        });
+    }
+    else {
+        MessageModel.find().sort('date asc').execFind(function (err, data) {
+            if (err) {
+                console.log(err);
+                res.send(500);  
+            } 
+            res.send(data);
+        });
+    }
 }
 
 function postMessage(req, res, next) {
-    var newMessage = new MessageModel();
-    newMessage.message = req.params.message;
-    newMessage.date = new Date();
-    newMessage.save(function () {
-        res.send(req.body);
-    });
+    if(req.params.id) {
+        MessageModel.findById(req.params.id, function (err, message) {
+            if (err) {
+                console.log(err);
+                res.send(500);  
+            } 
+            if (message) {
+                message.message = req.params.message;
+                message.save(function (err, savedMessage) {
+                    if (err) {
+                        console.log(err);
+                        res.send(500);  
+                    } 
+                    console.log('Updated message ' + savedMessage._id);
+                    res.send(200);
+                });
+            }
+            else {
+                res.send(404);
+            }
+        });
+    }
+    else {
+        var newMessage = new MessageModel();
+        newMessage.message = req.params.message;
+        newMessage.date = new Date();
+        newMessage.save(function (err, newMessage) {
+            if (err) {
+                console.log(err);
+                res.send(500);  
+            } 
+            console.log('Created a new message, id: ' + newMessage._id);
+            res.send(req.body);
+        });
+    }
 }
 
 function deleteMessage(req, res, next) {
@@ -61,7 +107,7 @@ function deleteMessage(req, res, next) {
                     console.log(err);
                     res.send(500); 
                 }
-                console.log('Removed message: ' + id);
+                console.log('Removed message ' + id);
                 res.send(204);
             });
         }
