@@ -1,12 +1,29 @@
 'use strict';
 
-/* Controllers */
+function MyCtrl1($scope, $resource) {
 
+	var Message = $resource('/api/v1/messages/:id');
+	
+	$scope.listMessages = function() {
+		$scope.messages = [];
+		var messages = Message.query(function() {
+			angular.forEach(messages, function(value) {
+				this.push(value);
+			}, $scope.messages);
+		});
+	}
 
-function MyCtrl1() {}
-MyCtrl1.$inject = [];
+	$scope.addMessage = function() {
+		var m = new Message();
+		m.message = $scope.newMessage;
+		m.$save();
+		$scope.listMessages();
+	}
 
-
-function MyCtrl2() {
+	$scope.deleteMessage = function(_id) {
+		Message.delete({id:_id}, function() {
+			$scope.listMessages();
+		});
+	}
 }
-MyCtrl2.$inject = [];
+MyCtrl1.$inject = ['$scope', '$resource'];

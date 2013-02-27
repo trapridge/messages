@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
+  <!--
   <ul class="menu">
     <li><a href="#/view1">view1</a></li>
     <li><a href="#/view2">view2</a></li>
@@ -14,11 +15,21 @@
   <div ng-view></div>
 
   <div>Angular seed app: v<span app-version></span></div>
+-->
+
+  <div ng-controller="MyCtrl1" ng-init="listMessages()">
+
+    <input type="text" ng-model="newMessage">
+    <button ng-click="addMessage()">Add</button>
+    <p ng-repeat="message in messages">{{message.message}} <a href ng-click="deleteMessage(message._id)">Delete</a></p>
+
+  </div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
   -->
   <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
