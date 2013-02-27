@@ -15,9 +15,13 @@ var MessageModel = mongoose.model('Message', new mongoose.Schema({
 var server = restify.createServer();
 server.use(restify.bodyParser());
 
-server.get('/messages', getMessages);
-server.post('/messages', postMessage);
-server.del('/messages/:id', deleteMessage);
+server.get('/', restify.serveStatic({
+    directory: './client',
+    default: 'index.html'
+}));
+server.get('/api/v1/messages', getMessages);
+server.post('/api/v1/messages', postMessage);
+server.del('/api/v1/messages/:id', deleteMessage);
 
 server.listen(8080, function() {
     console.log('%s listening at %s', server.name, server.url);
