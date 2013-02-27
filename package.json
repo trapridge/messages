@@ -1,6 +1,6 @@
 {
   "name": "guestbook",
-  "subdomain": "guestbook.trapridge",
+  "subdomain": "trapridge",
   "scripts": {
     "start": "./server/server.js"
   },
