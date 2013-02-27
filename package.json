@@ -9,7 +9,7 @@
     "mongoose": "3.5.x",
     "restify": "2.2.x"
   },
-  "bundleDependencies": [
+  "bundledDependencies": [
     "mongoose",
     "restify"
   ],
