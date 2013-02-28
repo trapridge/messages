@@ -8,7 +8,6 @@ function MyCtrl1($scope, $resource) {
 		var messages = Message.query(function() {
 			$scope.messages = [];
 			angular.forEach(messages, function(value) {		
-				// console.log(value.message)	
 				this.push(value);
 			}, $scope.messages);
 		});
@@ -27,7 +26,6 @@ function MyCtrl1($scope, $resource) {
 			$scope.listMessages();
 		});
 	}
-
 
 	$scope.saveMessage = function(_id, message) {
 		var m = Message.get({id:_id}, function() {
