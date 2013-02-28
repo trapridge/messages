@@ -18,24 +18,17 @@
 </head>
 <body>
 
-  <div ng-controller="MyCtrl1" ng-init="listMessages()" ng-cloak class="container">
+  <div ng-controller="MyCtrl1" ng-init="listMessages(); alerts=[];" class="container" ng-cloak>
     <h2>Messages</h2>
 
     <div class="input-append">
-      <input class="span2" id="appendedInputButtons" type="text" ng-model="newMessage">
+      <input class="span2" id="appendedInputButtons" type="text" ng-model="newMessage" ui-keydown="{'enter':'clearAndAdd($event)'}">
       <button ng-click="addMessage()" class="btn" type="button">Add</button>
     </div>
 
-    <!--
-    <input type="text" ng-model="newMessage">
-    <a ng-click="addMessage()" class="btn btn-primary btn-small">Add</a>
-    <span ng-repeat="m in messages">
-      <input type="text" ng-model="m.message"></input>
-      <a ng-click="saveMessage(m._id, m.message)" class="btn btn-primary btn-small">Save</a>
-      <a ng-click="deleteMessage(m._id)" class="btn btn-primary btn-small">Delete</a>
--->
-    <hr/>
+    <alert ng-repeat="a in alerts" type="a.type" close="close($index)">{{a.message}}</alert>
 
+    <hr/>
 
       <div class="input-append" ng-repeat="m in messages" style="display: block;">
         <input class="span2" id="appendedInputButtons" type="text" ng-model="m.message">
@@ -43,24 +36,25 @@
         <button ng-click="deleteMessage(m._id)" class="btn btn-danger" type="button">Delete</button>
       </div>
 
-      <br/>
-    </span>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+  <!--<script src="js/vendor/bootstrap.min.js"></script>-->
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
   -->
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular/angular-resource.js"></script>
+  <script src="js/vendor/angular-ui.js"></script>
+  <script src="js/vendor/ui-bootstrap-alert.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+
 
 </body>
 </html>

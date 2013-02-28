@@ -46,7 +46,7 @@ function getMessages(req, res, next) {
         });
     }
     else {
-        mongoose.model('Message').find().sort('date desc').execFind(function (err, data) {
+        mongoose.model('Message').find().sort('-date').execFind(function (err, data) {
             if (err) {
                 console.log(err);
                 res.send(500);  

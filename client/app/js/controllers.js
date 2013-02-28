@@ -18,6 +18,8 @@ function MyCtrl1($scope, $resource) {
 		m.message = $scope.newMessage;
 		m.$save(function() {
 			$scope.listMessages();
+			$scope.newMessage = '';
+			$scope.alerts.push({ type: 'success', message: 'yey' });
 		});
 	}
 
@@ -34,6 +36,14 @@ function MyCtrl1($scope, $resource) {
 				$scope.listMessages();
 			});
 		});
+	}
+
+	$scope.clearAndAdd = function(event) {
+		$scope.addMessage();
+	}
+
+	$scope.close = function(index) {
+		$scope.alerts.splice(index, 1);
 	}
 
 }
