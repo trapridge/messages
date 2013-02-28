@@ -7,7 +7,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
@@ -18,6 +20,32 @@
 </head>
 <body>
 
+  <div class="container-fluid" ng-cloak>
+    <div class="row-fluid" ng-controller="MyCtrl1" ng-init="listMessages(); alerts=[];">
+      <div class="span6">
+        <h2>Add</h2>
+        <div class="input-append">
+          <input id="appendedInputButtons" type="text" ng-model="newMessage" ui-keydown="{'enter':'clearAndAdd($event)'}">
+          <button ng-click="addMessage()" class="btn btn-primary" type="button">Add</button>
+        </div>
+        <hr/>
+      </div>
+      <div class="span6">
+        <h2>Edit</h2>
+        <div ng-repeat="m in messages" style="display: block;" class="input-append">
+          <input id="appendedInputButtons2" type="text" ng-model="m.message">
+          <button ng-click="saveMessage(m._id, m.message)" class="btn btn-primary" type="button">Save</button>
+          <button ng-click="deleteMessage(m._id)" class="btn btn-danger" type="button">Delete</button>
+        </div>
+      </div>
+    </div>
+    <hr>     
+    <footer>
+      <p>&copy; Messages 2012</p>
+    </footer>
+  </div>
+
+<!--
   <div ng-controller="MyCtrl1" ng-init="listMessages(); alerts=[];" class="container" ng-cloak>
     <h2>Messages</h2>
 
@@ -37,7 +65,7 @@
       </div>
 
   </div>
-
+-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
