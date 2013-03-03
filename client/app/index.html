@@ -11,6 +11,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style type="text/css">
+
+    /* 
+    Allow angular.js to be loaded in body, hiding cloaked elements until 
+    templates compile.  The !important is important given that there may be 
+    other selectors that are more specific or come later and might alter display.  
+    */
+    [ng\:cloak], [ng-cloak], .ng-cloak {
+      display: none !important;
+    }
+
+  </style>
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -18,20 +31,26 @@
 
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body ng-cloak>
 
-  <div class="container-fluid" ng-cloak ng-controller="MyCtrl1" ng-init="listMessages(); alerts=[];">
+  <div class="container-fluid" ng-controller="MyCtrl1" ng-init="listMessages(); alerts=[];">
 
     <div class="row-fluid" style="padding-top: 1em;">
-      <alert class="span12" ng-repeat="a in alerts" type="a.type" close="close($index)">{{a.message}}</alert>
+
+      <p><a href="/auth/google">Log in with Google Account</a></p>
+      <p><a href="/logout">Log out</a></p>
+
+      <!--
+      <alert class="span12" ng-repeat="a in alerts" type="a.type" close="close($index)" ng-cloak>{{a.message}}</alert>
+    -->
     </div>
 
     <div class="row-fluid">
 
       <div class="span5 offset1">
         <h2>Add</h2>
-        <div class="input-append" style="display: block;">
-          <input class="span10" id="appendedInputButtons" type="text" ng-model="newMessage" ui-keydown="{'enter':'clearAndAdd($event)'}">
+        <div class="input-append" style="display: block; width:100%">
+          <input style="width:90%" class="span10" id="appendedInputButtons" type="text" ng-model="newMessage" ui-keydown="{'enter':'clearAndAdd($event)'}">
           <button ng-click="addMessage()" class="btn btn-primary" type="button"><i class="icon-plus icon-white"></i> </button>
         </div>
 
@@ -39,11 +58,11 @@
 
       <div class="span5">
         <h2>Edit</h2>
-        <div ng-repeat="m in messages" style="display: block;" class="input-append">
+        <div ng-repeat="m in messages" style="display: block; width:100%" class="input-append">
           <!--
           <button ng-click="saveMessage(m._id, m.message)" class="btn btn-primary" type="button"><i class="icon-edit icon-white"></i> </button>
         -->
-          <input class="span10" id="appendedInputButtons2" type="text" ng-model="m.message">
+          <input style="width:90%" class="span10" id="appendedInputButtons2" type="text" ng-model="m.message">
           <button ng-click="deleteMessage(m._id)" class="btn btn-danger" type="button"><i class="icon-trash icon-white"></i> </button>
         </div>
       </div>

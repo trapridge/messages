@@ -1,20 +1,26 @@
 {
-  "name": "messages",
-  "subdomain": "messages.trapridge",
-  "scripts": {
-    "start": "./server/server.js"
-  },
-  "version": "0.0.5-14",
-  "dependencies": {
-    "mongoose": "3.5.x",
-    "restify": "2.2.x"
-  },
-  "bundledDependencies": [
-    "mongoose",
-    "restify"
-  ],
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  }
+    "name": "messages",
+    "version": "0.0.5-19",
+    "subdomain": "messages.trapridge",
+    "scripts": {
+        "start": "node server/server.js"
+    },
+    "dependencies": {
+        "connect": "2.7.x",
+        "mongoose": "3.5.x",
+        "passport": "0.1.x",
+        "passport-google-oauth": "0.1.x",
+        "restify": "2.2.x"
+    },
+    "bundledDependencies": [
+        "connect",
+        "mongoose",
+        "passport",
+        "passport-google-oauth",
+        "restify"
+    ],
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    }
 }
