@@ -1,26 +1,26 @@
-var connect = require('connect');
-var mongoose = require('mongoose');
-var restify = require('restify');
-
 // var handlers = require('./handlers.js');
 var oAuthConf = process.env.NODE_ENV === 'production' ? 
     require('./google_oauth_prod.json') : require('./google_oauth.json');
-
-// setup mongoose & mongodb
-mongoose.connect('mongodb://nodejitsu_trapridge:toujvd1dh5ioock6jtliel6lo4@ds051947.mongolab.com:51947/nodejitsu_trapridge_nodejitsudb1918183083');
-
-// register a model with mongodb using a mongoose schema to 
-mongoose.model('Message', new mongoose.Schema({
-    message: String,
-    date: Date
-})); 
-
 // // set up passport-google
 var passport = require('passport');
 var OAuth2Strategy = require('passport-google-oauth').OAuth2Strategy;
-
-
-
+passport.use(new OAuth2Strategy({
+    clientID: oAuthConf.web.client_id,
+    clientSecret: oAuthConf.web.client_secret,
+    callbackURL: oAuthConf.web.redirect_uris[0]
+  },
+  function(accessToken, refreshToken, profile, done) {
+    // asynchronous verification, for effect...
+    // process.nextTick(function () {
+      
+      // To keep the example simple, the user's Google profile is returned to
+      // represent the logged-in user.  In a typical application, you would want
+      // to associate the Google account with a user record in your database,
+      // and return that user instead.
+      return done(null, profile);
+    // });
+  }
+));
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -29,7 +29,18 @@ passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
 
+
+// setup mongoose & mongodb
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://nodejitsu_trapridge:toujvd1dh5ioock6jtliel6lo4@ds051947.mongolab.com:51947/nodejitsu_trapridge_nodejitsudb1918183083');
+// register a model with mongodb using a mongoose schema to 
+mongoose.model('Message', new mongoose.Schema({
+    message: String,
+    date: Date
+})); 
+
 // setup server
+var restify = require('restify');
 var server = restify.createServer();
 server.pre(function(req, res, next) {
     if(req.url === '/') req.url = '/index.html';
@@ -38,7 +49,6 @@ server.pre(function(req, res, next) {
 // server.use(restify.gzipResponse());
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
-
 // // initialize passport
 // server.use(passport.initialize());
 // server.use(passport.session());
@@ -55,6 +65,19 @@ server.use(function (req, res, next) {
 
   next();
 });
+
+// server.listen(3000);
+// Connect config here
+var connect = require('connect');
+connect()
+    .use(connect.logger())
+    .use(connect.cookieParser())
+    .use(connect.session({ secret: 'saignwittis', key: 'sid' }))
+    .use(passport.initialize())
+    .use(passport.session())
+    .use("/", function (req, res) { 
+        server.server.emit('request', req, res);
+    }).listen(3000);
 
 // GET /auth/google/callback
 //   Use passport.authenticate() as route middleware to authenticate the
@@ -103,23 +126,6 @@ server.get('/auth/google',
     // function will not be called.
     });
 
-passport.use(new OAuth2Strategy({
-    clientID: oAuthConf.web.client_id,
-    clientSecret: oAuthConf.web.client_secret,
-    callbackURL: oAuthConf.web.redirect_uris[0]
-  },
-  function(accessToken, refreshToken, profile, done) {
-    // asynchronous verification, for effect...
-    // process.nextTick(function () {
-      
-      // To keep the example simple, the user's Google profile is returned to
-      // represent the logged-in user.  In a typical application, you would want
-      // to associate the Google account with a user record in your database,
-      // and return that user instead.
-      return done(null, profile);
-    // });
-  }
-));
 
 function ensureAuthenticated(req, res, next) {
   if (req.isAuthenticated()) { return next(); }
@@ -131,22 +137,9 @@ server.get('/api/v1/messages', getMessages);
 server.post('/api/v1/messages/:id', postMessage);
 server.post('/api/v1/messages', postMessage);
 server.del('/api/v1/messages/:id', ensureAuthenticated, deleteMessage);
-
 server.get(/\/*/, restify.serveStatic({
     directory: './client/app'
 }));
-
-// server.listen(3000);
-// Connect config here
-connect()
-    .use(connect.logger())
-    .use(connect.cookieParser())
-    .use(connect.session({ secret: 'saignwittis', key: 'sid' }))
-    .use(passport.initialize())
-    .use(passport.session())
-    .use("/", function (req, res) { 
-        server.server.emit('request', req, res);
-    }).listen(3000);
 
 // request handlers
 function getMessages(req, res, next) {
