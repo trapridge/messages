@@ -1,0 +1,716 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pass",
+				"passport"
+			],
+			[
+				"oauth",
+				"oauth2callback"
+			],
+			[
+				"w",
+				"web"
+			],
+			[
+				"o",
+				"oAuthConf"
+			],
+			[
+				"padding",
+				"padding-top:   (property)"
+			],
+			[
+				"cord",
+				"cordovaReady"
+			],
+			[
+				"reverse",
+				"reverseName"
+			],
+			[
+				"acc",
+				"accessServiceUrl"
+			],
+			[
+				"s",
+				"scope"
+			],
+			[
+				"g",
+				"getEntryLangs"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"omega",
+				"omega_app"
+			],
+			[
+				"MODE",
+				"MODE_SHORT"
+			],
+			[
+				"co",
+				"config"
+			],
+			[
+				"dist",
+				"dist-prod"
+			],
+			[
+				"client",
+				"client_dist_from_temp_to_static"
+			],
+			[
+				"get",
+				"getVersion"
+			],
+			[
+				"compre",
+				"compress_dev"
+			],
+			[
+				"controlles",
+				"controllers"
+			],
+			[
+				"js",
+				"jsmeter"
+			],
+			[
+				"te",
+				"test-metrics"
+			],
+			[
+				"e",
+				"executed"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bac",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 560,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/server.js",
+			"settings":
+			{
+				"buffer_size": 7009,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Github: Open File"
+			],
+			[
+				"githu",
+				"Github: Open File"
+			],
+			[
+				"svn a",
+				"SVN: (Folder) Add"
+			],
+			[
+				"sv c",
+				"SVN: Custom Command…"
+			],
+			[
+				"svn cu",
+				"SVN: Custom Command…"
+			],
+			[
+				"ma",
+				"Markdown Preview: open Markdown Cheat sheet"
+			],
+			[
+				"m",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"sv re",
+				"SVN: (File) Revert"
+			],
+			[
+				"sv cu",
+				"SVN: Custom Command…"
+			],
+			[
+				"svn st ",
+				"SVN: Custom Command…"
+			],
+			[
+				"svn c",
+				"SVN: (File) Commit"
+			],
+			[
+				"svn ",
+				"SVN: Diff"
+			],
+			[
+				"svn co",
+				"SVN: (File) Commit"
+			],
+			[
+				"svn de",
+				"SVN: (File) Delete"
+			],
+			[
+				"svn d",
+				"SVN: (File) Delete"
+			],
+			[
+				"svn sta",
+				"SVN: Status"
+			],
+			[
+				"i",
+				"View: Toggle Minimap"
+			],
+			[
+				"SVN ",
+				"SVN: Info"
+			],
+			[
+				"SFT",
+				"SFTP: Map to Remote…"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"sv up",
+				"SVN: Update"
+			],
+			[
+				"SV D",
+				"SVN: Diff, Remote"
+			],
+			[
+				"sv co",
+				"SVN: (File) Commit"
+			],
+			[
+				"svn",
+				"SVN: Commit…"
+			],
+			[
+				"svn rever",
+				"SVN: (File) Revert"
+			],
+			[
+				"sv st",
+				"SVN: Status"
+			],
+			[
+				"sv reve",
+				"SVN: (File) Revert"
+			],
+			[
+				"svst",
+				"SVN: Status"
+			],
+			[
+				"svn st",
+				"SVN: Status"
+			],
+			[
+				"insta ll pa",
+				"Package Control: Install Package"
+			],
+			[
+				"svn  file re",
+				"SVN: (File) Revert"
+			],
+			[
+				"PA",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Sta",
+				"SVN: Status"
+			],
+			[
+				"SVN",
+				"SVN: (Folder) Properties…"
+			],
+			[
+				"S",
+				"SVN: Status"
+			],
+			[
+				"Pak",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 494.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jansaharju/Documents/git/messages/test.js",
+		"/Users/jansaharju/Documents/git/passport-google-oauth/examples/oauth2/app.js",
+		"/Users/jansaharju/Documents/git/messages/client/app/index.html",
+		"/Users/jansaharju/Documents/git/messages/server/google_oauth.json",
+		"/Users/jansaharju/Documents/git/messages/server/handlers.js",
+		"/Users/jansaharju/Documents/git/messages/server/google_oauth_prod.json",
+		"/Users/jansaharju/Documents/git/messages/client/app/js/controllers.js",
+		"/Users/jansaharju/Documents/git/messages/client/app/js/app.js",
+		"/Users/jansaharju/Documents/git/messages/server/server.js",
+		"/Users/jansaharju/Documents/git/messages/package.json",
+		"/Users/jansaharju/Documents/git/guestbook/README.md",
+		"/Users/jansaharju/Downloads/initializr 2/index.html",
+		"/Users/jansaharju/Documents/git/guestbook/client/app/js/controllers.js",
+		"/Users/jansaharju/Documents/git/guestbook/client/app/js/app.js",
+		"/Users/jansaharju/Documents/git/guestbook/client/app/index.html",
+		"/Users/jansaharju/Documents/git/guestbook/package.json",
+		"/Users/jansaharju/Documents/git/guestbook/server/server.js",
+		"/Users/jansaharju/Documents/git/guestbook/client/index.html",
+		"/Users/jansaharju/Documents/git/guestbook/server/config.js",
+		"/Users/jansaharju/Documents/git/guestbook/.gitignore",
+		"/Users/jansaharju/Documents/git/guestbook/config.js",
+		"/Users/jansaharju/Documents/git/guestbook/travis.yml",
+		"/Users/jansaharju/Documents/git/guestbook/server.js",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/index.html",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/js/app.js",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/js/directives.js",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/js/controllers.js",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/js/services.js",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/src/org/apache/cordova/plugin/BluetoothPlugin.java",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/js/vendor/bluetooth.js",
+		"/Users/jansaharju/Documents/git/cyclocharger/todo.txt",
+		"/Users/jansaharju/Documents/git/cyclocharger/app/android/CycloChargerApp/assets/www/js/vendor/angular-ui.js",
+		"/Users/jansaharju/Documents/svn/omega_trunk/implementation/client/app/js/services.js",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/main/webapp/WEB-INF/web.xml",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360915946/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360852670/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/pom.xml",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360849680/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360849335/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360846623/SVN",
+		"/Users/jansaharju/Downloads/pycabehtml-0.14/README",
+		"/Users/jansaharju/Downloads/pycabehtml-0.14/pycabe/parser.py",
+		"/Users/jansaharju/Downloads/pycabehtml-0.14/pycabehtml.py",
+		"/Users/jansaharju/Downloads/pycabehtml-0.14/INSTALL",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360681474/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360681164/SVN",
+		"/Users/jansaharju/Documents/svn/omega_trunk/implementation/client/resources/node-jsmeter-kk/package.json",
+		"/Users/jansaharju/Documents/svn/omega_trunk/implementation/client/README.md",
+		"/Users/jansaharju/Documents/svn/omega_trunk/README.txt",
+		"/Users/jansaharju/Documents/svn/omega_trunk/implementation/client/grunt.js",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360680636/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360680523/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/pom.xml",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360664507/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/main/java/com/kielikone/cas/AccessServiceAuthenticationHandler.java",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/main/webapp/WEB-INF/deployerConfigContext.xml",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/target/war/work/org.jasig.cas/cas-server-webapp/WEB-INF/spring-configuration/log4jConfiguration.xml",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/target/war/work/org.jasig.cas/cas-server-webapp/WEB-INF/spring-configuration/ticketExpirationPolicies.xml",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/target/war/work/org.jasig.cas/cas-server-webapp/WEB-INF/cas.properties",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360578369/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360578345/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360578068/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360575421/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360574517/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360351171/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360349119/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360349029/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/README.txt",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360348869/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360348729/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/compilation-README.txt",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/deploy/pom.xml",
+		"/Users/jansaharju/Library/Application Support/Sublime Text 2/Packages/Markdown Preview/sample.md",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360314566/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360234277/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360231673/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360164493/SVN",
+		"/Users/jansaharju/Documents/svn/omega_trunk/implementation/client/VERSION.txt",
+		"/Users/jansaharju/Documents/svn/omega_trunk/implementation/client/robots.txt",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360157798/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/README.txt",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1360143782/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/infrastructure/PersistencyHandler.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/resources/scripts/account_storage.sql",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359978439/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/test/java/com/kielikone/accessservice/test/integration/ServiceTest.java",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359978731/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359978678/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359978287/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359978229/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/AccessServiceAuthenticationHandler.java",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/main/webapp/WEB-INF/spring-configuration/warnCookieGenerator.xml",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/main/webapp/WEB-INF/spring-configuration/ticketGrantingTicketCookieGenerator.xml",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359642620/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359642516/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359642452/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/src/main/webapp/WEB-INF/view/jsp/default/ui/casLoginView.jsp",
+		"/Users/jansaharju/Documents/svn/mot_account/sso_service/trunk/implementation/cas_implementation_notes.txt",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359546594/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/test/java/com/kielikone/accessservice/test/PersistencyTest.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/test/java/com/kielikone/accessservice/test/ManagementTest.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/test/java/com/kielikone/accessservice/test/ServiceTest.java",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359546236/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359546251/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/test/java/com/kielikone/accessservice/test/integration/ManagementTest.java",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359546378/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359546276/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359544360/SVN",
+		"/var/folders/bj/qly80tl5125dbzl_4h1w69zh0000gn/T/sublime-svn-1359544271/SVN",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/SearchGroup.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/GroupProduct.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/infrastructure/PersistenceFilter.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/infrastructure/PersistenceFactory.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/SearchGroups.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/SearchAccounts.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/SearchAccount.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/Product.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/PhoneNumber.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/PersistencyException.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/Persistency.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/MessageMappingException.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/Members.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/Member.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/IllegalDataException.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/GroupType.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/Groups.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/GroupProducts.java",
+		"/Users/jansaharju/Documents/svn/mot_account/access_service/trunk/implementation/src/main/java/com/kielikone/accessservice/domainservices/GroupManager.java"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jansaharju/Documents/omega (trunk)/implementation/client"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"oAuth",
+			"oauth",
+			"oath",
+			"util",
+			"session",
+			"cookie",
+			"isAuthenticated",
+			"google",
+			"gookle",
+			"goolge",
+			"oAuthConf.",
+			"span",
+			"Message",
+			"db",
+			"log",
+			"$scope.langName",
+			"cas-server-webapp",
+			"cors",
+			"metrics",
+			"kk",
+			"metrics",
+			"log4",
+			"log",
+			"service",
+			"login",
+			"proxy",
+			"jersey",
+			"response",
+			"client",
+			"messagehandler",
+			"login",
+			"secure",
+			"jdbc",
+			"cargo",
+			"login",
+			"sure",
+			"test",
+			"deploy",
+			"omega",
+			"app",
+			"tool",
+			"xxx",
+			"fixme",
+			"refactor",
+			"todo",
+			"fixme",
+			"refactor",
+			"xxx",
+			"todo",
+			"should compose",
+			"source",
+			"node.js",
+			"angular",
+			"topmar",
+			"topbar",
+			"foundation",
+			"omega_app",
+			"omega",
+			"fs",
+			"copy",
+			"grunt-",
+			"testacular",
+			"routes.py",
+			"static",
+			"grunt",
+			"terveys",
+			"jqu",
+			"img",
+			"dist",
+			"save",
+			"api",
+			"integration",
+			"pip",
+			"yaml",
+			"dash",
+			"inter",
+			"view"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "package.json",
+					"settings":
+					{
+						"buffer_size": 560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"rulers":
+							[
+								80
+							],
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"wrap_width": 80
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/server.js",
+					"settings":
+					{
+						"buffer_size": 7009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								609,
+								593
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"rulers":
+							[
+								80
+							],
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true,
+							"wrap_width": 80
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 131.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"s",
+				"omega_trunk/node_modules/grunt-preprocess/node_modules/grunt/node_modules/.bin/semver"
+			],
+			[
+				"ser",
+				"omega_trunk/implementation/omega_app/static/app/js/services.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 270.0,
+	"status_bar_visible": false
+}
